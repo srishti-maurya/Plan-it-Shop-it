@@ -2,14 +2,213 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan it, Shop it</title>
+    <link rel="stylesheet" href="https://develop--planit-useit.netlify.app/styles/main.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- font awesome icons-->
+    <script src="https://kit.fontawesome.com/692dfd03ca.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="navigation-container">
+        <div class="text-xl text-grey">
+            <img src="./images/logo.png" alt="logo" class="img-responsive" height="60" />
+        </div>
+        <div class="navigation-search"><i class="fas fa-search mx-1"></i><input type="text" placeholder="Search" />
+        </div>
+        <button class="navigation-sidebar-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <div class="navigation-tools">
+            <button class="btn primary">Login</button>
+            <div>
+                <div class="badge-container">
+                    <div><i class="fas fa-heart"></i></div>
+                    <div class="badge-icon badge-small error">18</div>
+                </div>
+                <div class="badge-container">
+                    <div><i class="fas fa-shopping-cart"></i></div>
+                    <div class="badge-icon badge-small error">18</div>
+                </div>
+            </div>
+            <span class="text-grey">Cart</span>
+        </div>
+    </div>
+    <div class="home-display-category-container">
+        <div class="home-display-category">
+            <div class="light-opacity">
+                <img src="./images/books-category.jpeg" alt="logo" class="img-responsive" />
+            </div>
+            <div class="secondary text-primary home-display-category-title">Category</div>
+        </div>
 
+        <div class="home-display-category">
+            <div class="light-opacity">
+                <img src="./images/category.jpeg" alt="logo" class="img-responsive" />
+            </div>
+            <div class="secondary text-primary home-display-category-title">Category</div>
+        </div>
+
+        <div class="home-display-category">
+            <div class="light-opacity">
+                <img src="./images/books-category.jpeg" alt="logo" class="img-responsive" />
+            </div>
+            <div class="secondary text-primary home-display-category-title">Category</div>
+        </div>
+
+        <div class="home-display-category">
+            <div class="light-opacity">
+                <img src="./images/category.jpeg" alt="logo" class="img-responsive" />
+            </div>
+            <div class="secondary text-primary home-display-category-title">Category</div>
+        </div>
+        <div class="home-display-category">
+            <div class="light-opacity">
+                <img src="./images/books-category.jpeg" alt="logo" class="img-responsive" />
+            </div>
+            <div class="secondary text-primary home-display-category-title">Category</div>
+        </div>
+        <div class="home-display-category">
+            <div class="light-opacity">
+                <img src="./images/category.jpeg" alt="logo" class="img-responsive" />
+            </div>
+            <div class="secondary text-primary home-display-category-title">Category</div>
+        </div>
+    </div>
+    <div class="home-sale-banner">
+        <div class="home-sale-banner-body">
+            <p class="text-2xl f-bold ">Welcome to</p>
+            <p class="text-5xl f-bold pb-1"> Plan it, <span class="text-secondary">Shop it</span></p>
+            <p class="text-dark text-2xl pb-1 home-sale-banner-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Impedit
+                perspiciatis</p>
+            <button class="btn primary">Shop Now</button>
+        </div>
+        <img src="./images/book2.jpeg" alt="logo" class="img-responsive" />
+    </div>
+    <div class="home-new-arrivals-container">
+        <div class="card-container-horizontal">
+            <div class="badge-text primary card-badge">New</div>
+            <div class="card-icon"><i class="fas fa-heart fa"></i></div>
+            <img src="./images/rich-dad-poor-dad.png" alt="card-img" class="img-responsive" />
+            <div class="card-horizontal-section">
+                <div class="text-base card-category-title">Book</div>
+                <div class="text-2xl card-heading">Rich Dad Poor Dad</div>
+                <div class="text-sm card-sold-by">Sold by: Lorem, ipsum dolor.</div>
+                <div class="text-base card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                    voluptatibus esse debitis.
+                </div>
+                <div class="card-price">
+                    <span class="text-xl"> Rs. 490 </span>
+                    <span class="price-before"> Rs. 1299 </span>
+                    <span class="discount"> (62% OFF) </span>
+                </div>
+                <div>
+                    <button class="btn">
+                        <span><i class="fas fa-shopping-cart"></i></span>add to cart
+                    </button>
+                    <button class="btn outline-secondary btn-whishlist">Move to wishlist</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-horizontal">
+            <div class="badge-text primary card-badge">New</div>
+            <div class="card-icon"><i class="fas fa-heart fa"></i></div>
+            <img src="./images/ikigai.png" alt="card-img" class="img-responsive" />
+            <div class="card-horizontal-section">
+                <div class="text-base card-category-title">Book</div>
+                <div class="text-2xl card-heading">Ikigai</div>
+                <div class="text-sm card-sold-by">Sold by: Lorem, ipsum dolor.</div>
+                <div class="text-base card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                    voluptatibus esse debitis.
+                </div>
+                <div class="card-price">
+                    <span class="text-xl"> Rs. 490 </span>
+                    <span class="price-before"> Rs. 1299 </span>
+                    <span class="discount"> (62% OFF) </span>
+                </div>
+                <div>
+                    <button class="btn">
+                        <span><i class="fas fa-shopping-cart"></i></span>add to cart
+                    </button>
+                    <button class="btn outline-secondary btn-whishlist">Move to wishlist</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-horizontal">
+            <div class="badge-text primary card-badge">New</div>
+            <div class="card-icon"><i class="fas fa-heart fa"></i></div>
+            <img src="./images/you-can-win.jpeg" alt="card-img" class="img-responsive" />
+            <div class="card-horizontal-section">
+                <div class="text-base card-category-title">Book</div>
+                <div class="text-2xl card-heading">You can win</div>
+                <div class="text-sm card-sold-by">Sold by: Lorem, ipsum dolor.</div>
+                <div class="text-base card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                    voluptatibus esse debitis.
+                </div>
+                <div class="card-price">
+                    <span class="text-xl"> Rs. 490 </span>
+                    <span class="price-before"> Rs. 1299 </span>
+                    <span class="discount"> (62% OFF) </span>
+                </div>
+                <div>
+                    <button class="btn">
+                        <span><i class="fas fa-shopping-cart"></i></span>add to cart
+                    </button>
+                    <button class="btn outline-secondary btn-whishlist">Move to wishlist</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-horizontal">
+            <div class="badge-text primary card-badge">New</div>
+            <div class="card-icon"><i class="fas fa-heart fa"></i></div>
+            <img src="./images/Atomic-Habits.png" alt="card-img" class="img-responsive" />
+            <div class="card-horizontal-section">
+                <div class="text-base card-category-title">Book</div>
+                <div class="text-2xl card-heading">Atomic Habits</div>
+                <div class="text-sm card-sold-by">Sold by: Lorem, ipsum dolor.</div>
+                <div class="text-base card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                    voluptatibus esse debitis.
+                </div>
+                <div class="card-price">
+                    <span class="text-xl"> Rs. 490 </span>
+                    <span class="price-before"> Rs. 1299 </span>
+                    <span class="discount"> (62% OFF) </span>
+                </div>
+                <div>
+                    <button class="btn">
+                        <span><i class="fas fa-shopping-cart"></i></span>add to cart
+                    </button>
+                    <button class="btn outline-secondary btn-whishlist">Move to wishlist</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="p-1 footer">
+        <p class="text-xs pb-1">Made with ❤️ by Srishti Maurya &copy 2022</p>
+        <ul class="social-media-links-footer">
+            <li class="list-style-none">
+                <a href="https://github.com/srishti-maurya" class="text-success" target="_blank"><i
+                        class="fab fa-github"></i></a>
+            </li>
+            <li class="list-style-none">
+                <a href="https://twitter.com/SrishtiMaurya1?s=09" class="text-success" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-style-none">
+                <a href="https://www.linkedin.com/in/mauryasrishti22/" class="text-success" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>

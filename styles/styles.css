@@ -1,0 +1,130 @@
+/* color variables */
+:root {
+  --overlay-clr: rgb(234, 234, 236, 0.6);
+}
+
+/* navigation */
+.navigation-container {
+  margin: 0;
+  width: inherit;
+  background-color: var(--white-variant);
+}
+
+/* home page display category */
+
+.home-display-category-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  margin: 2rem;
+}
+
+.home-display-category {
+  max-width: 300px;
+  color: var(--primary);
+  position: relative;
+  justify-self: center;
+}
+
+.home-display-category:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.light-opacity {
+  opacity: 0.6;
+}
+
+.home-display-category-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 100%;
+  padding: 0.5rem 1rem;
+}
+
+/* home page sale banner */
+
+.home-sale-banner {
+  margin: 2rem;
+  position: relative;
+}
+
+.home-sale-banner img {
+  height: 400px;
+  width: 100%;
+}
+
+.home-sale-banner-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 0.5rem 2.5rem;
+  background-color: rgba(243, 243, 249, 0.77);
+  color: var(--primary);
+}
+
+/* new arrivals */
+
+.home-new-arrivals-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* media queries */
+@media (max-width: 1275px) {
+  .card-desc {
+    display: none;
+  }
+}
+@media (max-width: 1210px) {
+  .btn-whishlist {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-display-category-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home-new-arrivals-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .home-display-category-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home-sale-banner-body {
+    padding: 0.5rem 1rem;
+  }
+  .home-new-arrivals-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .card-container-horizontal {
+    display: block;
+  }
+  .card-container-horizontal img {
+    height: 120px;
+  }
+  .card-heading {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .card-price {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .home-sale-banner-desc {
+    display: none;
+  }
+}
