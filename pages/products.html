@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan it, Shop it | Products</title>
+    <link rel="stylesheet" href="https://develop--planit-useit.netlify.app/styles/main.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- font awesome icons-->
+    <script src="https://kit.fontawesome.com/692dfd03ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="navigation-container">
+        <div class="text-xl text-grey">
+            <a href="../index.html"> <img src="../images/logo.png" alt="image" class="img-responsive" height="55" /></a>
+        </div>
+        <div class="navigation-search"><i class="fas fa-search mx-1"></i><input type="text" placeholder="Search" />
+        </div>
+        <button class="navigation-sidebar-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <div class="navigation-tools">
+            <button class="btn primary">Login</button>
+            <div>
+                <div class="badge-container">
+                    <div><i class="fas fa-heart"></i></div>
+                    <div class="badge-icon badge-small error">5</div>
+                </div>
+                <div class="badge-container">
+                    <div><i class="fas fa-shopping-cart"></i></div>
+                    <div class="badge-icon badge-small error">6</div>
+                </div>
+            </div>
+            <span class="text-grey">Cart</span>
+        </div>
+    </div>
+    <!-- main section -->
+    <section class="prod-section-container">
+        <aside class="p-1">
+            <div class="filter-section-header">
+                <h2 class="text-primary text-xl inline-block">Filters</h2>
+                <button class="btn outline-secondary btn-sm">clear</button>
+            </div>
+            <div class="horizontal-div"></div>
+            <h2 class="text-primary text-xl pb-1">Price</h2>
+            <div class="slider">
+                <input type="range" list="tickmarks" min="100" max="800" step="100" />
+                <datalist id="tickmarks">
+                    <option value="100"></option>
+                    <option value="200"></option>
+                    <option value="300"></option>
+                    <option value="400"></option>
+                    <option value="500"></option>
+                    <option value="600"></option>
+                    <option value="700"></option>
+                    <option value="800"></option>
+                </datalist>
+            </div>
+            <div class="slider-range pb-1">
+                <div>
+                    100
+                </div>
+                <div>
+                    500
+                </div>
+                <div>
+                    800
+                </div>
+            </div>
+            <div class="horizontal-div"></div>
+            <h2 class="text-primary text-xl pb-1">Category</h2>
+            <div class="pb-05">
+                <input type="checkbox" id="all" checked>
+                <label class="pl-1" for="scales">All</label>
+            </div>
+            <div class="pb-05">
+                <input type="checkbox" id="contemporaryFiction">
+                <label class="pl-1" for="contemporaryFiction">Contemporary Fiction</label>
+            </div>
+            <div class="pb-05">
+                <input type="checkbox" id="selfHelp">
+                <label class="pl-1" for="selfHelp">Self-help</label>
+            </div>
+            <div class="pb-05">
+                <input type="checkbox" id="business">
+                <label class="pl-1" for="business">Business & Economics</label>
+            </div>
+            <div class="pb-05">
+                <input type="checkbox" id="spirituality">
+                <label class="pl-1" for="spirituality">Spirituality</label>
+            </div>
+            <div class="pb-05">
+                <input type="checkbox" id="myths">
+                <label class="pl-1" for="myths">Myths, Legends & Sagas</label>
+            </div>
+            <div class="pb-05">
+                <input type="checkbox" id="biographies">
+                <label class="pl-1" for="biographies">Biographies & Autobiographies</label>
+            </div>
+            <div class="horizontal-div"></div>
+            <h2 class="text-primary text-xl pb-1">Rating</h2>
+            <div class="pb-05">
+                <input type="radio" id="4-star" value="4-star" name="rating" checked>
+                <label class="pl-1" for="4-star">4 Stars & above</label>
+            </div>
+            <div class="pb-05">
+                <input type="radio" id="3-star" value="3-star" name="rating">
+                <label class="pl-1" for="3-star">3 Stars & above</label>
+            </div>
+            <div class="pb-05">
+                <input type="radio" id="2-star" value="2-star" name="rating">
+                <label class="pl-1" for="2-star">2 Stars & above</label>
+            </div>
+            <div class="pb-05">
+                <input type="radio" id="1-star" value="1-star" name="rating">
+                <label class="pl-1" for="1-star">1 Stars & above</label>
+            </div>
+            <div class="horizontal-div"></div>
+            <h2 class="text-primary text-xl pb-1">Sort by</h2>
+            <div class="pb-05">
+                <input type="radio" id="low" value="low" name="price" checked>
+                <label class="pl-1" for="low">Price - Low to High</label>
+            </div>
+            <div class="pb-05">
+                <input type="radio" id="high" value="high" name="price">
+                <label class="pl-1" for="high">Price - High to Low</label>
+            </div>
+        </aside>
+        <main class="products-list">
+            <div class="card-container-vertical products-card products-card">
+                <img src="../images/books/arranged marriage.jpeg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">One Arranged Murder</div>
+                        <div class="text-base  ">Author: Chetan Bhagat</div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 147 </span>
+                            <span class="price-before"> ₹225 </span>
+                            <span class="discount"> (Save 35%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.4 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/atomic habbits.jpeg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Atomic Habits</div>
+                        <div class="text-base  ">Author: James Clear</div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 512 </span>
+                            <span class="price-before"> ₹799 </span>
+                            <span class="discount"> (Save 36%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.6 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/attitude is everything.jpeg" alt="card-img"
+                    class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Attitude Is Everything</div>
+                        <div class="text-base  ">Author: Jeff Keller </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 139 </span>
+                            <span class="price-before"> ₹199 </span>
+                            <span class="discount"> (Save 30%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.5 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/becoming.jpeg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Becoming</div>
+                        <div class="text-base  ">Author: Michelle Obama </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 442 </span>
+                            <span class="price-before"> ₹699 </span>
+                            <span class="discount"> (Save 37%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.6 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/can love happen twice.jpeg" alt="card-img"
+                    class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Can Love Happen Twice</div>
+                        <div class="text-base  ">Author: Ravinder Singh </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 133 </span>
+                            <span class="price-before"> ₹199 </span>
+                            <span class="discount"> (Save 33%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.3 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/chanakya neeti.jpeg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Chanakya Neeti</div>
+                        <div class="text-base  ">Author: Chanakya </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 126 </span>
+                            <span class="price-before"> ₹175 </span>
+                            <span class="discount"> (Save 28%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.4 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/death.jpeg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Death; An Inside Story</div>
+                        <div class="text-base  ">Author: Sadhguru </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 191 </span>
+                            <span class="price-before"> ₹299 </span>
+                            <span class="discount"> (Save 36%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.7 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/dont-sweat-the-small-stuff.jpeg" alt="card-img"
+                    class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Don't Sweat the Small Stuff</div>
+                        <div class="text-base  ">Author: Richard Carlson </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 258 </span>
+                            <span class="price-before"> ₹299 </span>
+                            <span class="discount"> (Save 14%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.5 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/girl in room 105.jpeg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">The Girl in Room 105</div>
+                        <div class="text-base  ">Author: Chetan Bhagat </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 114 </span>
+                            <span class="price-before"> ₹199 </span>
+                            <span class="discount"> (Save 43%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.4 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/half girlfriend.jpeg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Half Girlfriend</div>
+                        <div class="text-base  ">Author: Chetan Bhagat </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 99 </span>
+                            <span class="price-before"> ₹250 </span>
+                            <span class="discount"> (Save 60%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.2 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/ikigai.jpeg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Ikigai</div>
+                        <div class="text-base  ">Author: Héctor García and Francesc Miralles </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 295 </span>
+                            <span class="price-before"> ₹550 </span>
+                            <span class="discount"> (Save 46%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.6 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-vertical products-card">
+                <img src="../images/books/karma.jpg" alt="card-img" class="img-responsive img-center" />
+                <div class="card-body-vertical">
+                    <div class="icon-container">
+                        <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                    </div>
+                    <div class="card-vertical-section">
+                        <div class="text-sm text-secondary">Paperback</div>
+                        <div class="text-2xl card-heading">Karma</div>
+                        <div class="text-base  ">Author: Sadhguru </div>
+                        <div class="card-price">
+                            <span class="text-xl"> ₹ 148 </span>
+                            <span class="price-before"> ₹299 </span>
+                            <span class="discount"> (Save 51%) </span>
+                        </div>
+                        <span class="text-lg card-rating">4.7 <i class="fa fa-star checked"></i> |5</span>
+
+                        <button class="btn">
+                            <i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- footer -->
+    <footer class="p-1 footer">
+        <p class="text-xs pb-1">Made with ❤️ by Srishti Maurya &copy 2022</p>
+        <ul class="social-media-links-footer p-05">
+            <li class="list-style-none">
+                <a href="https://github.com/srishti-maurya" class="text-success" target="_blank"><i
+                        class="fab fa-github"></i></a>
+            </li>
+            <li class="list-style-none">
+                <a href="https://twitter.com/SrishtiMaurya1?s=09" class="text-success" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-style-none">
+                <a href="https://www.linkedin.com/in/mauryasrishti22/" class="text-success" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

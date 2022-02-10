@@ -13,9 +13,10 @@
 </head>
 
 <body>
+    <!-- navigation -->
     <div class="navigation-container">
         <div class="text-xl text-grey">
-            <img src="./images/logo.png" alt="logo" class="img-responsive" height="60" />
+            <a href="./index.html"> <img src="./images/logo.png" alt="image" class="img-responsive" height="55" /></a>
         </div>
         <div class="navigation-search"><i class="fas fa-search mx-1"></i><input type="text" placeholder="Search" />
         </div>
@@ -27,174 +28,188 @@
             <div>
                 <div class="badge-container">
                     <div><i class="fas fa-heart"></i></div>
-                    <div class="badge-icon badge-small error">18</div>
+                    <div class="badge-icon badge-small error">5</div>
                 </div>
                 <div class="badge-container">
                     <div><i class="fas fa-shopping-cart"></i></div>
-                    <div class="badge-icon badge-small error">18</div>
+                    <div class="badge-icon badge-small error">6</div>
                 </div>
             </div>
             <span class="text-grey">Cart</span>
         </div>
     </div>
-    <div class="home-display-category-container">
-        <div class="home-display-category">
-            <div class="light-opacity">
-                <img src="./images/books-category.jpeg" alt="logo" class="img-responsive" />
-            </div>
-            <div class="secondary text-primary home-display-category-title">Category</div>
-        </div>
 
-        <div class="home-display-category">
-            <div class="light-opacity">
-                <img src="./images/category.jpeg" alt="logo" class="img-responsive" />
-            </div>
-            <div class="secondary text-primary home-display-category-title">Category</div>
+    <!-- hero section -->
+    <div class="hero-section">
+        <div class="hero-section-body">
+            <p class="text-2xl f-bold">Welcome to</p>
+            <p class="text-5xl f-bold pb-1">Plan it, <span class="text-secondary">Shop it</span></p>
+            <p class="text-dark text-2xl pb-1">
+                Are you planning to read a book? We've got your back! The top book collections have been hand-picked for
+                you at the best price.
+            </p>
+            <button class="btn btn-link-light"><a href="./pages/products.html"> Shop Now</a></button>
         </div>
+        <img src="./images/categories/cover.jpeg" alt="image" class="img-responsive" />
+    </div>
+    <h2 class="text-primary text-3xl text-center pt-1">Books collections curated for you</h2>
 
-        <div class="home-display-category">
-            <div class="light-opacity">
-                <img src="./images/books-category.jpeg" alt="logo" class="img-responsive" />
-            </div>
-            <div class="secondary text-primary home-display-category-title">Category</div>
-        </div>
+    <!-- collections section -->
 
-        <div class="home-display-category">
-            <div class="light-opacity">
-                <img src="./images/category.jpeg" alt="logo" class="img-responsive" />
+    <div class="category">
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/category1.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center">Bestsellers</h3>
             </div>
-            <div class="secondary text-primary home-display-category-title">Category</div>
         </div>
-        <div class="home-display-category">
-            <div class="light-opacity">
-                <img src="./images/books-category.jpeg" alt="logo" class="img-responsive" />
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/new release.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center">New releases</h3>
             </div>
-            <div class="secondary text-primary home-display-category-title">Category</div>
         </div>
-        <div class="home-display-category">
-            <div class="light-opacity">
-                <img src="./images/category.jpeg" alt="logo" class="img-responsive" />
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/expert.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center">Expert picks</h3>
             </div>
-            <div class="secondary text-primary home-display-category-title">Category</div>
         </div>
     </div>
-    <div class="home-sale-banner">
-        <div class="home-sale-banner-body">
-            <p class="text-2xl f-bold ">Welcome to</p>
-            <p class="text-5xl f-bold pb-1"> Plan it, <span class="text-secondary">Shop it</span></p>
-            <p class="text-dark text-2xl pb-1 home-sale-banner-desc">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Impedit
-                perspiciatis</p>
-            <button class="btn primary">Shop Now</button>
-        </div>
-        <img src="./images/book2.jpeg" alt="logo" class="img-responsive" />
-    </div>
-    <div class="home-new-arrivals-container">
-        <div class="card-container-horizontal">
-            <div class="badge-text primary card-badge">New</div>
-            <div class="card-icon"><i class="fas fa-heart fa"></i></div>
-            <img src="./images/rich-dad-poor-dad.png" alt="card-img" class="img-responsive" />
-            <div class="card-horizontal-section">
-                <div class="text-base card-category-title">Book</div>
-                <div class="text-2xl card-heading">Rich Dad Poor Dad</div>
-                <div class="text-sm card-sold-by">Sold by: Lorem, ipsum dolor.</div>
-                <div class="text-base card-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                    voluptatibus esse debitis.
-                </div>
-                <div class="card-price">
-                    <span class="text-xl"> Rs. 490 </span>
-                    <span class="price-before"> Rs. 1299 </span>
-                    <span class="discount"> (62% OFF) </span>
-                </div>
-                <div>
-                    <button class="btn">
-                        <span><i class="fas fa-shopping-cart"></i></span>add to cart
-                    </button>
-                    <button class="btn outline-secondary btn-whishlist">Move to wishlist</button>
-                </div>
-            </div>
-        </div>
-        <div class="card-container-horizontal">
-            <div class="badge-text primary card-badge">New</div>
-            <div class="card-icon"><i class="fas fa-heart fa"></i></div>
-            <img src="./images/ikigai.png" alt="card-img" class="img-responsive" />
-            <div class="card-horizontal-section">
-                <div class="text-base card-category-title">Book</div>
-                <div class="text-2xl card-heading">Ikigai</div>
-                <div class="text-sm card-sold-by">Sold by: Lorem, ipsum dolor.</div>
-                <div class="text-base card-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                    voluptatibus esse debitis.
-                </div>
-                <div class="card-price">
-                    <span class="text-xl"> Rs. 490 </span>
-                    <span class="price-before"> Rs. 1299 </span>
-                    <span class="discount"> (62% OFF) </span>
-                </div>
-                <div>
-                    <button class="btn">
-                        <span><i class="fas fa-shopping-cart"></i></span>add to cart
-                    </button>
-                    <button class="btn outline-secondary btn-whishlist">Move to wishlist</button>
-                </div>
-            </div>
-        </div>
-        <div class="card-container-horizontal">
-            <div class="badge-text primary card-badge">New</div>
-            <div class="card-icon"><i class="fas fa-heart fa"></i></div>
-            <img src="./images/you-can-win.jpeg" alt="card-img" class="img-responsive" />
-            <div class="card-horizontal-section">
-                <div class="text-base card-category-title">Book</div>
-                <div class="text-2xl card-heading">You can win</div>
-                <div class="text-sm card-sold-by">Sold by: Lorem, ipsum dolor.</div>
-                <div class="text-base card-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                    voluptatibus esse debitis.
-                </div>
-                <div class="card-price">
-                    <span class="text-xl"> Rs. 490 </span>
-                    <span class="price-before"> Rs. 1299 </span>
-                    <span class="discount"> (62% OFF) </span>
-                </div>
-                <div>
-                    <button class="btn">
-                        <span><i class="fas fa-shopping-cart"></i></span>add to cart
-                    </button>
-                    <button class="btn outline-secondary btn-whishlist">Move to wishlist</button>
-                </div>
-            </div>
-        </div>
-        <div class="card-container-horizontal">
-            <div class="badge-text primary card-badge">New</div>
-            <div class="card-icon"><i class="fas fa-heart fa"></i></div>
-            <img src="./images/Atomic-Habits.png" alt="card-img" class="img-responsive" />
-            <div class="card-horizontal-section">
-                <div class="text-base card-category-title">Book</div>
-                <div class="text-2xl card-heading">Atomic Habits</div>
-                <div class="text-sm card-sold-by">Sold by: Lorem, ipsum dolor.</div>
-                <div class="text-base card-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                    voluptatibus esse debitis.
-                </div>
-                <div class="card-price">
-                    <span class="text-xl"> Rs. 490 </span>
-                    <span class="price-before"> Rs. 1299 </span>
-                    <span class="discount"> (62% OFF) </span>
-                </div>
-                <div>
-                    <button class="btn">
-                        <span><i class="fas fa-shopping-cart"></i></span>add to cart
-                    </button>
-                    <button class="btn outline-secondary btn-whishlist">Move to wishlist</button>
-                </div>
-            </div>
-        </div>
 
+    <!-- genre section -->
+
+    <h2 class="text-primary text-3xl text-center">Books in your favourite genre</h2>
+    <div class="genre-container">
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/book cluster.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center mt-05">Contemporary Fiction</h3>
+            </div>
+        </div>
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/self help.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center mt-05">Self-help</h3>
+            </div>
+        </div>
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/bio.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center mt-05">Biographies & Autobiographies</h3>
+            </div>
+        </div>
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/spiritual.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center mt-05">Spirituality</h3>
+            </div>
+        </div>
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/history.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center mt-05">Myths, Legends & Sagas</h3>
+            </div>
+        </div>
+        <div class="category-wrapper">
+            <div class="category-body">
+                <img src="./images/categories/eco.jpeg" alt="image" class="img-responsive" />
+                <h3 class="text-center mt-05">Business & Economics</h3>
+            </div>
+        </div>
     </div>
+
+    <!-- choice section -->
+
+    <h2 class="text-primary text-3xl text-center">Plan it's Choice</h2>
+    <div class="choice-container">
+        <div class="card-container-vertical">
+            <img src="./images/books/atomic habbits.jpeg" alt="card-img" class="img-responsive img-center" />
+            <div class="card-body-vertical">
+                <div class="icon-container">
+                    <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                </div>
+                <div class="card-vertical-section">
+                    <div class="text-sm text-secondary">Paperback</div>
+                    <div class="text-2xl card-heading">Atomic Habits</div>
+                    <div class="text-base">Author: James Clear</div>
+                    <div class="card-price">
+                        <span class="text-base"> ₹ 512 </span>
+                    </div>
+                    <span class="text-lg card-rating">4.5 <i class="fa fa-star checked"></i> |5</span>
+
+                    <button class="btn"><i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to
+                            cart</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-vertical">
+            <div class="badge-text primary card-badge">New</div>
+            <img src="./images/books/ikigai.jpeg" alt="card-img" class="img-responsive img-center" />
+            <div class="card-body-vertical">
+                <div class="icon-container">
+                    <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                </div>
+                <div class="card-vertical-section">
+                    <div class="text-sm text-secondary">Paperback</div>
+                    <div class="text-2xl card-heading">Ikigai</div>
+                    <div class="text-base">Author: Héctor García and Francesc Miralles</div>
+                    <div class="card-price">
+                        <span class="text-base"> ₹ 269 </span>
+                    </div>
+                    <span class="text-lg card-rating">4.6 <i class="fa fa-star checked"></i> |5</span>
+
+                    <button class="btn"><i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to
+                            cart</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-vertical card-3">
+            <img src="./images/books/rich dad.jpeg" alt="card-img" class="img-responsive img-center" />
+            <div class="card-body-vertical">
+                <div class="icon-container">
+                    <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                </div>
+                <div class="card-vertical-section">
+                    <div class="text-sm text-secondary">Paperback</div>
+                    <div class="text-2xl card-heading">Rich Dad Poor Dad</div>
+                    <div class="text-base">Author: Robert T. Kiyosaki</div>
+                    <div class="card-price">
+                        <span class="text-base"> ₹ 243 </span>
+                    </div>
+                    <span class="text-lg card-rating">4.5 <i class="fa fa-star checked"></i> |5</span>
+
+                    <button class="btn"><i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to
+                            cart</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-vertical card-4">
+            <div class="badge-text primary card-badge">New</div>
+            <img src="./images/books/think like a monk.jpeg" alt="card-img" class="img-responsive img-center" />
+            <div class="card-body-vertical">
+                <div class="icon-container">
+                    <div class="card-icon-vertical"><i class="fas fa-heart fa"></i></div>
+                </div>
+                <div class="card-vertical-section">
+                    <div class="text-sm text-secondary">Paperback</div>
+                    <div class="text-2xl card-heading">Think Like a Monk</div>
+                    <div class="text-base">Author: Jay Shetty</div>
+                    <div class="card-price">
+                        <span class="text-base"> ₹ 338 </span>
+                    </div>
+                    <span class="text-lg card-rating">4.6 <i class="fa fa-star checked"></i> |5</span>
+                    <button class="btn"><i class="fas fa-shopping-cart"></i> <span class="card-btn-text">add to
+                            cart</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
     <footer class="p-1 footer">
         <p class="text-xs pb-1">Made with ❤️ by Srishti Maurya &copy 2022</p>
-        <ul class="social-media-links-footer">
+        <ul class="social-media-links-footer p-05">
             <li class="list-style-none">
                 <a href="https://github.com/srishti-maurya" class="text-success" target="_blank"><i
                         class="fab fa-github"></i></a>

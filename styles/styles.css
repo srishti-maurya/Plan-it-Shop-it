@@ -1,130 +1,160 @@
+@import url(./utilities.css);
+@import url(./products.css);
+
 /* color variables */
 :root {
-  --overlay-clr: rgb(234, 234, 236, 0.6);
+  --overlay-clr: rgba(243, 243, 249, 0.77);
 }
 
 /* navigation */
+
 .navigation-container {
-  margin: 0;
-  width: inherit;
-  background-color: var(--white-variant);
+  width: initial;
+  background-color: var(--secondary-light-variant);
 }
 
-/* home page display category */
+/* hero section */
 
-.home-display-category-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0.5rem;
-  margin: 2rem;
-}
-
-.home-display-category {
-  max-width: 300px;
-  color: var(--primary);
-  position: relative;
-  justify-self: center;
-}
-
-.home-display-category:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-}
-
-.light-opacity {
-  opacity: 0.6;
-}
-
-.home-display-category-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  opacity: 100%;
-  padding: 0.5rem 1rem;
-}
-
-/* home page sale banner */
-
-.home-sale-banner {
-  margin: 2rem;
+.hero-section {
+  margin: 0.5rem 1rem;
   position: relative;
 }
 
-.home-sale-banner img {
-  height: 400px;
+.hero-section img {
+  height: 540px;
   width: 100%;
 }
 
-.home-sale-banner-body {
+.hero-section-body {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   padding: 0.5rem 2.5rem;
-  background-color: rgba(243, 243, 249, 0.77);
+  background-color: var(--overlay-clr);
   color: var(--primary);
 }
 
-/* new arrivals */
+/* collections */
 
-.home-new-arrivals-container {
+.category {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.category img {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.category-wrapper {
+  background-color: var(--background);
+  padding: 1rem;
+}
+
+.category-wrapper:hover {
+  box-shadow: var(--shadow);
+  color: var(--secondary-dark-variant);
+}
+
+/* genre */
+
+.genre-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.genre-container img {
+  height: 210px;
+  width: 100%;
+}
+
+/* choice */
+.icon-container {
+  position: relative;
+}
+
+.card-icon-vertical {
+  right: 0.5rem;
+  top: 0.8rem;
+}
+
+.card-container-vertical {
+  height: 530px;
+  border: 2px solid var(--white);
+}
+
+.card-container-vertical img {
+  padding: 0.5rem;
+  height: 40%;
+}
+
+.choice-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem;
+  justify-items: center;
+}
+
+.card-body-vertical {
+  padding: 0 1rem;
 }
 
 /* media queries */
-@media (max-width: 1275px) {
-  .card-desc {
+@media (max-width: 1210px) {
+  .card-4 {
     display: none;
   }
-}
-@media (max-width: 1210px) {
-  .btn-whishlist {
-    display: none;
+  .choice-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .genre-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 900px) {
-  .home-display-category-container {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 800px) {
+  .choice-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .home-new-arrivals-container {
-    grid-template-columns: repeat(1, 1fr);
+  .genre-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-4 {
+    display: block;
   }
 }
 
 @media (max-width: 550px) {
-  .home-display-category-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .home-sale-banner-body {
+  .hero-section-body {
     padding: 0.5rem 1rem;
+    width: 250px;
   }
-  .home-new-arrivals-container {
+  .choice-container {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .choice-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .genre-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .category {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (max-width: 580px) {
-  .card-container-horizontal {
-    display: block;
-  }
-  .card-container-horizontal img {
-    height: 120px;
-  }
-  .card-heading {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-  .card-price {
-    display: none;
-  }
-}
-
 @media (max-width: 370px) {
-  .home-sale-banner-desc {
-    display: none;
+  .card-container-vertical {
+    height: 282px;
   }
 }
