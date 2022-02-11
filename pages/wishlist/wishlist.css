@@ -1,0 +1,8 @@
+.selected-product {
+  color: var(--error);
+  background-color: var(--white);
+  padding: 0.4rem;
+  border: 1px solid var(--error);
+  border-radius: 10px;
+  top: -0.2rem;
+}

@@ -1,5 +1,7 @@
 @import url(./utilities.css);
-@import url(./products.css);
+@import url(../pages/products/products.css);
+@import url(../pages/Cart/cart.css);
+@import url(../pages/wishlist/wishlist.css);
 
 /* color variables */
 :root {
@@ -11,6 +13,15 @@
 .navigation-container {
   width: initial;
   background-color: var(--secondary-light-variant);
+}
+
+.badge-container a:hover,
+.badge-container a:active {
+  color: var(--secondary-dark-variant);
+}
+
+.badge-container a:visited {
+  color: var(--primary);
 }
 
 /* hero section */
@@ -104,6 +115,11 @@
 
 .card-body-vertical {
   padding: 0 1rem;
+}
+
+.btn-place-order {
+  width: 100%;
+  margin: 0;
 }
 
 /* media queries */
