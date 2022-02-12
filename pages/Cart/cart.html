@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan it, Shop it | Cart</title>
+    <link rel="stylesheet" href="https://develop--planit-useit.netlify.app/styles/main.css" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <!-- font awesome icons-->
+    <script src="https://kit.fontawesome.com/7b4bc4dfbd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="navigation-container">
+        <div class="text-xl text-grey">
+            <a href="../../index.html"> <img src="../../images/logo.png" alt="image" class="img-responsive"
+                    height="55" /></a>
+        </div>
+        <div class="navigation-search"><i class="fas fa-search mx-1"></i><input type="text" placeholder="Search" />
+        </div>
+        <button class="navigation-sidebar-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <div class="navigation-tools">
+            <button class="btn primary">Login</button>
+            <div>
+                <div class="badge-container">
+                    <div>
+                        <a href="../wishlist/wishlist.html" class="outline-primary">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="badge-icon badge-small error">5</div>
+                </div>
+                <div class="badge-container">
+                    <div>
+                        <a href="./cart.html">
+                            <i class="fas fa-shopping-cart" class="outline-primary"></i>
+                        </a>
+                    </div>
+                    <div class="badge-icon badge-small error">6</div>
+                </div>
+            </div>
+            <span class="text-grey">Cart</span>
+        </div>
+    </div>
+
+    <!-- main section -->
+    <h1 class="text-center p-1">My cart</h1>
+    <section class="cart-container">
+        <div class="cart-card-warpper">
+            <div class="card-container-horizontal">
+                <div class="card-icon"><i class="fas fa-heart fa"></i></div>
+                <div class="card-horizontal-body">
+                    <img src="../../images/books/think like a monk.jpeg" alt="card-img" class="img-responsive" />
+                    <div class="card-horizontal-section">
+                        <div class="text-base text-secondary">category</div>
+                        <div class="text-2xl card-heading">Card title</div>
+                        <div class="text-base h-card-desc">card description</div>
+                        <div class="card-price">
+                            <span class="text-xl"> Rs. 338 </span>
+                            <span class="price-before"> Rs. 499 </span>
+                            <span class="discount"> (Save 32%) </span>
+                        </div>
+                        <div>
+                            <p class="inline-block">Quantity</p>
+                            <p class="text-lg inline-block pl-1 text-secondary">+</p>
+                            <input type="text" class="cart-total-item">
+                            <p class="text-2xl inline-block text-secondary">-</p>
+                        </div>
+                        <div>
+                            <button class="btn">Remove from cart </button>
+                            <button class="btn outline-secondary">Move to wishlist </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-horizontal">
+                <div class="card-icon"><i class="fas fa-heart fa"></i></div>
+                <div class="card-horizontal-body">
+                    <img src="../../images/books/think like a monk.jpeg" alt="card-img" class="img-responsive" />
+                    <div class="card-horizontal-section">
+                        <div class="text-base text-secondary">category</div>
+                        <div class="text-2xl card-heading">Card title</div>
+                        <div class="text-base h-card-desc">card description</div>
+                        <div class="card-price">
+                            <span class="text-xl"> Rs. 338 </span>
+                            <span class="price-before"> Rs. 499 </span>
+                            <span class="discount"> (Save 32%) </span>
+                        </div>
+                        <div>
+                            <p class="inline-block">Quantity</p>
+                            <p class="text-lg inline-block pl-1 text-secondary">+</p>
+                            <input type="text" class="cart-total-item">
+                            <p class="text-2xl inline-block text-secondary">-</p>
+                        </div>
+                        <div>
+                            <button class="btn">Remove from cart </button>
+                            <button class="btn outline-secondary">Move to wishlist </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="cart-price-details-container">
+            <h2>Price Details</h2>
+            <div class="horizontal-div"></div>
+            <div class="cart-price-desc">
+                <p>Price (2 items)</p>
+                <p> ₹ 1000</p>
+            </div>
+            <div class="cart-price-desc">
+                <p>Discount</p>
+                <p> - ₹ 500</p>
+            </div>
+            <div class="cart-price-desc">
+                <p>Delivery Charges</p>
+                <p> ₹ 199</p>
+            </div>
+            <div class="horizontal-div"></div>
+            <div class="cart-price-desc">
+                <h2>Total Amount</h2>
+                <h2> ₹ 699</h2>
+            </div>
+            <div class="horizontal-div"></div>
+            <p class="pb-1">You will save ₹ 301 on this order</p>
+            <button class="btn btn-place-order">Place order </button>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="p-1 footer">
+        <p class="text-xs">Made with ❤️ by Srishti Maurya &copy 2022</p>
+    </footer>
+</body>
+
+</html>
