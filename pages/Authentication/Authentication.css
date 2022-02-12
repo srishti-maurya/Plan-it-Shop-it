@@ -1,0 +1,32 @@
+.auth-container {
+    margin: 3rem 1rem;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.auth-wrapper {
+    background-color: var(--secondary-light-variant);
+    padding: 1rem;
+    width: 30%;
+    box-shadow: var(--shadow);
+}
+
+.auth-form-container input {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.auth-wrapper-password {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr;
+    align-items: center;
+}
+
+.anchor-text a {
+    color: var(--primary);
+}
+
+.anchor-text-primary a {
+    color: var(--white);
+}
