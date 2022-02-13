@@ -2,6 +2,7 @@
 @import url(../pages/products/products.css);
 @import url(../pages/Cart/cart.css);
 @import url(../pages/wishlist/wishlist.css);
+@import url(../pages/Authentication/Authentication.css);
 
 /* color variables */
 :root {
@@ -118,7 +119,7 @@
   padding: 0 1rem;
 }
 
-.btn-place-order {
+.btn-full-width {
   width: 100%;
   margin: 0;
 }
@@ -128,9 +129,11 @@
   .card-4 {
     display: none;
   }
+
   .choice-container {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .genre-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -140,9 +143,11 @@
   .choice-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .genre-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .card-4 {
     display: block;
   }
@@ -153,6 +158,7 @@
     padding: 0.5rem 1rem;
     width: 250px;
   }
+
   .choice-container {
     margin: 0.5rem;
   }
@@ -162,9 +168,11 @@
   .choice-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .genre-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .category {
     grid-template-columns: repeat(1, 1fr);
   }
