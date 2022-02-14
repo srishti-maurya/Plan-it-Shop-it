@@ -9,11 +9,15 @@
   --overlay-clr: rgba(243, 243, 249, 0.77);
 }
 
+html {
+  background-color: var(--white);
+}
+
 /* navigation */
 
 .navigation-container {
   width: initial;
-  background-color: var(--secondary-light-variant);
+  box-shadow: var(--nav-shadow);
 }
 
 .badge-container a:visited,
@@ -23,7 +27,7 @@
 
 .badge-container a:hover,
 .badge-container a:active {
-  color: var(--secondary-dark-variant);
+  color: var(--secondary);
 }
 
 /* hero section */
@@ -65,12 +69,12 @@
 }
 
 .category-wrapper {
-  background-color: var(--background);
+  background-color: var(--secondary-light-variant);
   padding: 1rem;
 }
 
 .category-wrapper:hover {
-  box-shadow: var(--shadow);
+  box-shadow: var(--card-shadow);
   color: var(--secondary-dark-variant);
 }
 
@@ -89,24 +93,6 @@
 }
 
 /* choice */
-.icon-container {
-  position: relative;
-}
-
-.card-icon-vertical {
-  right: 0.5rem;
-  top: 0.8rem;
-}
-
-.card-container-vertical {
-  height: 530px;
-  border: 2px solid var(--white);
-}
-
-.card-container-vertical img {
-  padding: 0.5rem;
-  height: 40%;
-}
 
 .choice-container {
   display: grid;
@@ -115,8 +101,9 @@
   justify-items: center;
 }
 
-.card-body-vertical {
-  padding: 0 1rem;
+.card-container-vertical,
+.card-icon {
+  background-color: var(--white);
 }
 
 .btn-full-width {
@@ -126,30 +113,16 @@
 
 /* media queries */
 @media (max-width: 1210px) {
-  .card-4 {
-    display: none;
-  }
 
+  .genre-container,
   .choice-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .genre-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 800px) {
-  .choice-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .genre-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card-4 {
-    display: block;
   }
 }
 
@@ -165,21 +138,13 @@
 }
 
 @media (max-width: 430px) {
-  .choice-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
-  .genre-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
+  .genre-container,
   .category {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 370px) {
-  .card-container-vertical {
-    height: 282px;
+  .choice-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
