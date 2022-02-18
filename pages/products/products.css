@@ -3,6 +3,10 @@
   grid-template-columns: 20% auto;
 }
 
+.prod-section-container aside {
+  /* position: fixed; */
+}
+
 .filter-section-header {
   display: grid;
   grid-template-columns: 70% auto;
