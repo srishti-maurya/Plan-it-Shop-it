@@ -47,6 +47,10 @@ Are you planning to read a book? We've got your back! The top book collections h
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+      
+## Landing Page
+![Page](https://user-images.githubusercontent.com/39724354/154942169-b3f1d1dd-22c6-4f84-87bc-107bd3764ff1.png)
+
 
 ## Contributing
 
@@ -67,6 +71,6 @@ Don't forget to give the project a star! Thanks again!
 
 Your Name - [@SrishtiMaurya1](https://twitter.com/SrishtiMaurya1?s=09) - srishti22maurya@gmail.com
 
-Project Link: [github-repo](https://github.com/srishti-maurya/Plan-it-Component-Library/tree/develop)
+Project Link: [github-repo](https://github.com/srishti-maurya/Plan-it-Shop-it/tree/develop)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
